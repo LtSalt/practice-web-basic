@@ -1,0 +1,54 @@
+:root {
+    --bg-color-default: rgb(29, 29, 29);
+    --bg-color-body: #111;
+}
+
+body {
+    height: 100vh;
+    min-height: 600px;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-body);
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20,  1fr);
+    height: 400px;
+    width: 400px;
+    row-gap: 2px;
+    column-gap: 2px;
+}
+
+.grid-item {
+    background-color: var(--bg-color-default);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.colored {
+    transition: background-color; /* uses default duration and delay of 0s 8 */
+}
+
+.green {
+    background-color: rgb(46, 204, 113);
+}
+
+.blue {
+    background-color: rgb(52, 152, 219);
+}
+
+.red {
+    background-color: rgb(231, 76, 60);
+}
+
+.purple {
+    background-color: rgb(142, 68, 73);
+}
+.orange {
+    background-color: rgb(230, 126, 24);
+}
+
