@@ -30,7 +30,7 @@ body {
 }
 
 .colored {
-    transition: background-color; /* uses default duration and delay of 0s 8 */
+    transition: background-color; /* uses default duration and delay of 0s */
 }
 
 .green {
