@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  background: #71717A;
+  font-family: "Poppins";
+  position: relative;
+}
+
+#menu {
+    background-color: #3F3F46;
+    padding: 8px 12px;
+    height: 60px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-button {
+    padding: 8px;
+    height: 50%;
+    width: 100px;   
+    z-index: 1;
+    cursor: pointer;
+    -webkit-mask-image: url("./static/bars-solid.svg");
+    -webkit-mask-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    transition: -webkit-mask-repeat 1s
+}
+
+#nav-button.active {
+    -webkit-mask-image: url("./static/x-solid.svg");
+    -webkit-mask-repeat: no-repeat;
+}
+
+#left-navigation {
+    background-color: #27272A;
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    top: 0;
+    left: 0;
+    transition: left 200ms linear;
+}
+
+#left-navigation.active {
+    left: -100px;
+    
+}
+
+.divider {
+    height: 60px;
+}
+
+
+li, ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+main {
+  padding: 140px 40px 40px;
+  color: #bbb;
+}
